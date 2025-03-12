@@ -1,0 +1,7 @@
+<script>start("/Users/rafa/Desktop/StartSchool/collabCoding/12.03.25/new/NEWWWW/Collab3/");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow(".git",".git",1,384,"384 B",1741775877,"12/03/2025, 12:37:57");</script>
+<script>addRow("backend","backend",1,224,"224 B",1741775574,"12/03/2025, 12:32:54");</script>
+<script>addRow("frontend","frontend",1,384,"384 B",1741775575,"12/03/2025, 12:32:55");</script>
+<script>addRow(".gitignore",".gitignore",0,0,"0 B",1741775574,"12/03/2025, 12:32:54");</script>
+<script>addRow("README.md","README.md",0,957,"957 B",1741775574,"12/03/2025, 12:32:54");</script>
