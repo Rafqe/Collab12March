@@ -1,0 +1,165 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* App Container */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #3a3a3a;
+  margin-bottom: 0.5rem;
+}
+
+.app-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+
+.users-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.users-flex-container > div {
+  /* This will create 3 items per row */
+  flex: 0 0 calc(33.333% - 1rem);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* User Card */
+.user-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.user-name {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.user-email {
+  color: #3498db;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.user-company {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #ecf0f1;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.loading:after {
+  content: "...";
+  animation: dots 1.5s steps(5, end) infinite;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    content: ".";
+  }
+  40% {
+    content: "..";
+  }
+  60%,
+  100% {
+    content: "...";
+  }
+}
+
+/* Error Message */
+.error-message {
+  background-color: #fee;
+  color: #e74c3c;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  .users-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .users-flex-container > div {
+    flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .users-flex-container > div {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
